@@ -3,8 +3,8 @@
 ## 所属
 
 芝浦工業大学 工学部 電気ロボット工学コース<br>
-長谷川・谷島研究室 B3<br>
-<https://sites.google.com/shibaura-it.ac.jp/thase-frl>
+[フィールドロボット研究室](https://sites.google.com/shibaura-it.ac.jp/thase-frl)<br>
+指導教員: 長谷川忠大 / 谷島諒丞
 
 ---
 
@@ -19,12 +19,8 @@
 
     **[つくばチャレンジ2026](tsukuba_2026.md)**
 
-    ---
-
 - [![AIチャレンジの画像](assets/aichallenge.webp)](aichallenge.md)
 
     **[自動運転AIチャレンジ2027](aichallenge.md)**
-
-    ---
 
 </div>
