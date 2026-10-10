@@ -30,6 +30,11 @@ plugins:
       lang: ja
 
 markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.details
 
 nav:
   - 自己紹介: index.md
