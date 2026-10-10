@@ -13,5 +13,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: pip install "mkdocs<2" mkdocs-material
-      - run: mkdocs gh-deploy --force
+      # Zensical は 0.x 系で仕様変更があり得るため、動作確認したバージョンに固定する
+      - run: pip install "zensical==0.0.69" ghp-import
+      - run: zensical build --clean
+      # 生成した site/ を gh-pages ブランチへ公開する（mkdocs gh-deploy と同じ仕組み）
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          ghp-import --no-jekyll --push --force --message "Deploy ${GITHUB_SHA} with Zensical" site
