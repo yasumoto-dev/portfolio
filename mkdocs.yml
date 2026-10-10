@@ -1,0 +1,38 @@
+site_name: 研究ログ Field Robot Lab
+site_description: Field Robot Lab での研究記録 
+site_author: yasumoto-dev
+site_url: https://yasumoto-dev.github.io/portfolio/
+
+repo_url: https://github.com/yasumoto-dev/portfolio
+repo_name: yasumoto-dev/portfolio
+
+theme:
+  name: material
+  language: ja
+
+  palette:
+    - scheme: default 
+      primary: indigo  
+      accent: indigo  
+
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - toc.follow
+    - search.highlight
+    - search.suggest
+
+plugins:
+  - search:
+      lang: ja
+
+markdown_extensions:
+
+nav:
+  - 自己紹介: index.md
+  - 研究:
+    - つくばチャレンジ2026: tsukuba_2026.md
+    - 自動運転AIチャレンジ: aichallenge.md
+      
