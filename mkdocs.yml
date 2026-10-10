@@ -11,11 +11,12 @@ theme:
   language: ja
 
   palette:
-    - scheme: default 
-      primary: indigo  
-      accent: indigo  
+    - scheme: default
+      primary: indigo
+      accent: indigo
 
   features:
+    - navigation.instant
     - navigation.top
     - navigation.tabs
     - navigation.sections
