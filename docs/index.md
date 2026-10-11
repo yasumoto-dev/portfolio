@@ -39,7 +39,7 @@ hide:
   </a>
   <a class="pr-card" href="aichallenge/">
     <span class="pr-media">
-      <img src="assets/aichallenge.webp" alt="AIチャレンジの画像">
+      <img src="assets/aichallenge.png" alt="AIチャレンジの画像">
       <span class="pr-badge">PR02</span>
     </span>
     <span class="pr-body">
