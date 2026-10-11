@@ -8,7 +8,8 @@ hide:
 
 <p class="hero-label">START ─── WP01 ─── WP02 ─── GOAL</p>
 
-# 自律移動ロボットの<br>研究・開発
+<h1 class="hero-name">Ryo Yasumoto</h1>
+<p class="hero-role">自律移動ロボットの研究・開発</p>
 
 現在は、[つくばチャレンジ2026](https://tsukubachallenge.jp/2026/)に向けたロボットの開発をしている。
 

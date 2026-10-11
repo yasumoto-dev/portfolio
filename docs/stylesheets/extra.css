@@ -95,7 +95,7 @@ body[data-md-color-scheme]:has(.hero) {
 }
 
 /* ========== ヒーロー ========== */
-.hero { padding: 2.5rem 0 1rem; }
+.hero { padding: 0.2rem 0 1rem; }
 .hero-label {
   font-family: var(--md-code-font-family);
   font-size: .6rem;
@@ -103,7 +103,20 @@ body[data-md-color-scheme]:has(.hero) {
   color: var(--fr-link);
   margin: 0 !important;
 }
-.md-typeset .hero h1 { font-size: 2.5rem; line-height: 1.25; margin: .4em 0 .5em; }
+.hero-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-role {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+  opacity: 0.7;
+  margin: 0 0 2rem;
+}
+.md-typeset .hero h1 { font-size: 2.5rem; line-height: 1.25; margin: .4em 0 .0em; }
 .hero p { color: var(--fr-sub); max-width: 28rem; }
 
 /* ========== 所属 ========== */
