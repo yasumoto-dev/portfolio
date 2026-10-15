@@ -32,14 +32,6 @@ features = [
 text = "IBM Plex Sans JP"
 code = "DM Mono"
 
-# ダーク（最初に表示）
-[[project.theme.palette]]
-scheme = "slate"
-primary = "black"
-accent = "deep-orange"
-toggle.icon = "lucide/sun"
-toggle.name = "ライトモードへ"
-
 # ライト
 [[project.theme.palette]]
 scheme = "default"
@@ -47,6 +39,15 @@ primary = "white"
 accent = "deep-orange"
 toggle.icon = "lucide/moon"
 toggle.name = "ダークモードへ"
+
+# ダーク
+[[project.theme.palette]]
+scheme = "slate"
+primary = "black"
+accent = "deep-orange"
+toggle.icon = "lucide/sun"
+toggle.name = "ライトモードへ"
+
 
 [project.markdown_extensions.attr_list]
 [project.markdown_extensions.md_in_html]
