@@ -34,7 +34,7 @@ hide:
     </span>
     <span class="pr-body">
       <strong>つくばチャレンジ2026</strong>
-      <small>3D LiDAR / 2D LiDAR / GNSS / IMU / Jetson Xavier</small>
+      <small>3D LiDAR / 2D LiDAR / IMU /　Odometry </small>
     </span>
   </a>
   <a class="pr-card" href="aichallenge/">

@@ -6,6 +6,7 @@
   --fr-text: #e3e4d9;
   --fr-sub: #c0c3b6;
   --fr-label: #8e9486;
+  --fr-surface: #262b25;  /* 本文の面（地より少し明るく） */
   --fr-accent: #ff5a1f;   /* ボタン・バッジ */
   --fr-link: #ff8a5c;     /* 本文リンク */
   --fr-on-accent: #111;
@@ -13,12 +14,13 @@
 
 /* ========== 配色（ライト） ========== */
 [data-md-color-scheme="default"] {
-  --fr-bg: #f3f3ee;       /* 少し温かみのある白 */
-  --fr-grid: #e2e3db;
-  --fr-line: #cfd1c6;
-  --fr-text: #1c201b;
-  --fr-sub: #464b43;
-  --fr-label: #6b7066;
+  --fr-bg: #f5f5f5;       /* 地：無彩色のごく薄いグレー */
+  --fr-grid: #e8e8e8;
+  --fr-line: #d0d0d0;
+  --fr-text: #020202;
+  --fr-sub: #2c2e2b;
+  --fr-label: #626460;
+  --fr-surface: #ffffff;  /* 本文の面（完全な白） */
   --fr-accent: #ff5a1f;
   --fr-link: #c2410c;     /* 白地で読める濃いオレンジ */
   --fr-on-accent: #111;
@@ -52,6 +54,14 @@ body[data-md-color-scheme]:has(.hero) {
 }
 .md-container, .md-main, .md-main__inner, .md-content,
 .md-sidebar, .md-sidebar__scrollwrap { background: transparent !important; }
+
+/* ========== 本文サーフェス（地はくすんだ色・本文は純白） ========== */
+body[data-md-color-scheme]:not(:has(.hero)) .md-content__inner {
+  background: var(--fr-surface);
+  border: 1px solid var(--fr-line);
+  padding: 1.2rem 1.6rem 2rem;
+  margin-bottom: 2.4rem;
+}
 
 .md-typeset *, .md-search__form, .md-search__input, .md-button { border-radius: 0 !important; }
 .md-header, .md-tabs { box-shadow: none !important; }
@@ -110,7 +120,7 @@ body[data-md-color-scheme]:has(.hero) {
 }
 
 .hero-role {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.4;
   opacity: 0.7;
@@ -155,4 +165,7 @@ body[data-md-color-scheme]:has(.hero) {
 @media (max-width: 76.25em) {
   .pr-grid { grid-template-columns: 1fr; }
   .md-typeset .hero h1 { font-size: 1.7rem; }
+  body[data-md-color-scheme]:not(:has(.hero)) .md-content__inner {
+    padding: 1rem 1rem 1.6rem;
+  }
 }
