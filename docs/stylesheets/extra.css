@@ -173,6 +173,8 @@ body[data-md-color-scheme]:not(:has(.hero)) .md-content__inner {
     margin-left: 0;
     margin-right: 0;
     padding-top: .6rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
   }
   body[data-md-color-scheme]:not(:has(.hero)) .md-content__inner::before { height: 0; }
 }
