@@ -17,13 +17,13 @@
   --fr-bg: #f5f5f5;       /* 地：無彩色のごく薄いグレー */
   --fr-grid: #e8e8e8;
   --fr-line: #d0d0d0;
-  --fr-text: #020202;
-  --fr-sub: #2c2e2b;
-  --fr-label: #626460;
+  --fr-text: #212121;     /* 本文・見出し（Qiita 実測値） */
+  --fr-sub: #474747;
+  --fr-label: #6b6b6b;
   --fr-surface: #ffffff;  /* 本文の面（完全な白） */
   --fr-accent: #ff5a1f;
   --fr-link: #c2410c;     /* 白地で読める濃いオレンジ */
-  --fr-on-accent: #111;
+  --fr-on-accent: #111111;
 }
 
 /* ========== 共通：変数をテーマに反映 ========== */
@@ -165,7 +165,14 @@ body[data-md-color-scheme]:not(:has(.hero)) .md-content__inner {
 @media (max-width: 76.25em) {
   .pr-grid { grid-template-columns: 1fr; }
   .md-typeset .hero h1 { font-size: 1.7rem; }
+}
+
+/* スマホ：本文カードを画面端までぴったり広げる */
+@media (max-width: 44.984375em) {
   body[data-md-color-scheme]:not(:has(.hero)) .md-content__inner {
-    padding: 1rem 1rem 1.6rem;
+    margin-left: 0;
+    margin-right: 0;
+    border-left: 0;
+    border-right: 0;
   }
 }
